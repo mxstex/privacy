@@ -13,3 +13,5 @@ This repository only publishes it: with the app repositories checked out beside 
 `python build.py` renders both pages and `python build.py --check` fails when a page is
 out of date. `privacy-policy.html` (the first, 2D-only page) redirects to `gravity/`.
 `.nojekyll` makes Pages serve the files as they are.
+
+Published 2026-09-27: GitHub Pages serves `main` / root (build `88f9dff`). Both URLs return HTTP 200 and exactly match the committed generated HTML. Play Console entry remains a separate owner action.
