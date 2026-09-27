@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gravity 3D — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    margin: 0 auto; padding: 2.5rem 1.25rem 5rem; max-width: 44rem;
+    font: 16px/1.65 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #14181f; background: #fbfcfe; overflow-wrap: break-word;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dce8ff; background: #0b1018; }
+    td, th { border-color: #26364f !important; }
+    code { background: #16203a !important; }
+    hr { border-color: #26364f !important; }
+    blockquote { border-color: #2c4470 !important; color: #a9b8d3 !important; }
+    a { color: #7fb0ff !important; }
+  }
+  h1 { font-size: 1.9rem; margin: 0 0 .25rem; letter-spacing: -.01em; }
+  h2 { font-size: 1.15rem; margin: 2.25rem 0 .6rem; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; display: block; overflow-x: auto; }
+  th, td { border: 1px solid #d7dfea; padding: .5rem .7rem; text-align: left; font-size: .95rem; }
+  th { font-weight: 600; }
+  code { background: #eef1f6; padding: .12em .38em; border-radius: 4px; font-size: .9em; }
+  ul { padding-left: 1.3rem; }
+  li { margin: .3rem 0; }
+  blockquote { margin: 1.25rem 0; padding: .25rem 1rem; border-left: 3px solid #cbd9ee; color: #4a5a72; }
+  hr { border: 0; border-top: 1px solid #d7dfea; margin: 3.5rem 0; }
+  a { color: #2f6fd0; }
+  .lang { font-size: .9rem; color: #6b7a90; margin-bottom: 2rem; }
+</style>
+</head>
+<body>
+
+<p class="lang"><a href="#cs">Česky ↓</a></p>
+<h1>Privacy Policy - Gravity 3D</h1>
+<p><strong>Effective date:</strong> 2026-09-01<br>
+<strong>Last updated:</strong> 2026-09-27<br>
+<strong>Application:</strong> Gravity 3D (<code>com.mxstex.gravity3d</code>)<br>
+<strong>Developer contact:</strong> stepanmichal82@gmail.com<br>
+<strong>Public address:</strong> <a href="https://mxstex.github.io/privacy/gravity3d/">https://mxstex.github.io/privacy/gravity3d/</a></p>
+<p>Play requires a privacy policy even from an application that collects nothing. This is that page, and it says exactly that.</p>
+<blockquote><p>This is the policy for the <strong>3D</strong> application. The 2D application (<code>com.mxstex.gravity</code>) is a separate listing with its own policy: <a href="https://mxstex.github.io/privacy/gravity/">https://mxstex.github.io/privacy/gravity/</a></p></blockquote>
+<h2>Short version</h2>
+<p>Gravity 3D collects no personal data, shares no data with anyone, and contains no advertising, no analytics and no tracking of any kind.</p>
+<p>It does contain an optional <strong>tip jar</strong> - one or two in-app purchases that unlock nothing and are not required to play any part of the game. That is the only feature that touches a network, and only once you open it: the tip dialog, or the roadmap panel, which shows the same jar at its bottom.</p>
+<h2>What the application stores</h2>
+<p>On your device only, in the app's private storage (Android <code>DataStore</code>):</p>
+<table>
+  <tr><th>what</th><th>why</th><th>example</th></tr>
+  <tr><td>the set of completed chapter keys</td><td>so the campaign resumes where you left it</td><td><code>chapter_first_flyby</code></td></tr>
+  <tr><td>the set of chapter keys won by gravity alone</td><td>so the star beside a finished chapter survives closing the app</td><td><code>stone</code></td></tr>
+  <tr><td>the chosen interface language</td><td>so the game opens in the language you read</td><td><code>cs</code></td></tr>
+  <tr><td>whether music is on</td><td>so the choice survives closing the app</td><td><code>true</code></td></tr>
+</table>
+<p>That is the complete list. There is no account, no login, no identifier, no device fingerprint, no advertising ID, no location, no contacts, no camera or microphone access, and no crash or usage reporting.</p>
+<p><strong>Nothing about a purchase is stored.</strong> The tip unlocks nothing, so there is no entitlement to keep, no receipt kept on the device and no record that a tip was ever given. The purchase itself is handled entirely by Google Play.</p>
+<h2>Permissions</h2>
+<p>The application requests <strong>no</strong> Android runtime permissions - nothing that shows you a dialog, and nothing you have to grant.</p>
+<p>Three permissions do appear in the published bundle's merged manifest. None of them is declared by this application; all three arrive with Google's Play Billing library, which the tip jar uses:</p>
+<table>
+  <tr><th>permission</th><th>why it is there</th></tr>
+  <tr><td><code>com.android.vending.BILLING</code></td><td>lets the app talk to the Play Store at all</td></tr>
+  <tr><td><code>android.permission.INTERNET</code></td><td>the billing client's own traffic to Google</td></tr>
+  <tr><td><code>android.permission.ACCESS_NETWORK_STATE</code></td><td>the billing client checks connectivity</td></tr>
+</table>
+<p>This is stated plainly rather than left to be discovered, because it is the one way this application differs from an entirely offline one. The game itself opens no connections: it has no backend, no analytics endpoint and no content to fetch. If you never open the tip dialog or the roadmap panel, the billing library is never started and makes no request.</p>
+<h2>Google Play billing</h2>
+<p>If you choose to give a tip, the purchase is processed by <strong>Google Play</strong>, not by this application. Google receives what it needs to take a payment; the developer receives a payout and the transaction records Google provides, which do not include your device data. Google's handling is covered by <a href="https://policies.google.com/privacy">Google's privacy policy</a>.</p>
+<p>The application never sees or stores your payment details.</p>
+<p>Google's billing library brings Google Play services and Google's Data Transport components with it. Once the jar is open, whatever that library reports to Google about its own operation goes to Google under Google's privacy policy; none of it reaches the developer, and the game adds nothing to it.</p>
+<h2>Backup</h2>
+<p>Android's own backup service is enabled (<code>allowBackup</code>), so the values above may be included in <strong>your own</strong> Google account backup and restored when you set up a new device. That transfer is performed by Android, to your account, under <a href="https://policies.google.com/privacy">Google's privacy policy</a> - not by this application, and the developer has no access to it. You can turn it off in Android's backup settings.</p>
+<h2>Children</h2>
+<p>The game is educational and contains no ads, no user generated content and no communication features. It does contain optional in-app purchases, which is a fact the Play listing declares. Nothing about the application is directed at collecting data from anyone, of any age.</p>
+<h2>How to delete the data</h2>
+<p>Uninstall the application, or use Android's **Settings -&gt; Apps -&gt; Gravity 3D -&gt; Storage -&gt; Clear data**. Both remove the stored progress, language and music setting completely. There is nothing stored anywhere else to delete.</p>
+<h2>Changes</h2>
+<p>If a future version adds anything that changes the above, this page is updated before that version is published, and the Data safety declaration in the Play Console is updated with it.</p>
+<hr id="cs">
+<h1 lang="cs">Zásady ochrany osobních údajů - Gravity 3D</h1>
+<p><strong>Účinnost od:</strong> 2026-09-01<br>
+<strong>Poslední změna:</strong> 2026-09-27<br>
+<strong>Aplikace:</strong> Gravity 3D (<code>com.mxstex.gravity3d</code>)<br>
+<strong>Kontakt:</strong> stepanmichal82@gmail.com<br>
+<strong>Veřejná adresa:</strong> <a href="https://mxstex.github.io/privacy/gravity3d/">https://mxstex.github.io/privacy/gravity3d/</a></p>
+<blockquote><p>Tohle jsou zásady pro <strong>3D</strong> aplikaci. Dvourozměrná aplikace (<code>com.mxstex.gravity</code>) je samostatný záznam s vlastními zásadami: <a href="https://mxstex.github.io/privacy/gravity/">https://mxstex.github.io/privacy/gravity/</a></p></blockquote>
+<h2>Stručně</h2>
+<p>Gravity 3D nesbírá žádné osobní údaje, nikomu nic nepředává a neobsahuje reklamy, analytiku ani žádné sledování.</p>
+<p>Obsahuje volitelný <strong>příspěvek</strong> - jeden či dva nákupy v aplikaci, které neodemykají nic a nejsou potřeba k dohrání žádné části hry. Je to jediná funkce, která se dotýká sítě, a až když ji otevřete: dialog příspěvku, nebo panel s plánem vývoje, který má stejný příspěvek dole.</p>
+<h2>Co se ukládá</h2>
+<p>Pouze na vašem zařízení, v soukromém úložišti aplikace:</p>
+<ul>
+  <li>množina klíčů dokončených kapitol (aby kampaň pokračovala tam, kde jste skončili),</li>
+  <li>množina kapitol vyhraných jen gravitací (aby hvězdička u kapitoly vydržela zavření aplikace),</li>
+  <li>zvolený jazyk rozhraní,</li>
+  <li>jestli hraje hudba.</li>
+</ul>
+<p>To je celý seznam. Žádný účet, žádné přihlášení, žádný identifikátor, žádné reklamní ID, poloha, kontakty, kamera ani mikrofon, a žádné hlášení pádů či používání. O nákupu se neukládá nic - příspěvek nic neodemyká, takže není co si pamatovat.</p>
+<h2>Oprávnění</h2>
+<p>Aplikace nežádá <strong>žádná</strong> oprávnění za běhu - nic, na co byste museli klikat.</p>
+<p>Ve sloučeném manifestu se objevují tři oprávnění a žádné z nich tato aplikace nedeklaruje; všechna přicházejí s knihovnou Google Play Billing, kterou používá příspěvek:</p>
+<ul>
+  <li><code>com.android.vending.BILLING</code> - komunikace s Obchodem Play,</li>
+  <li><code>android.permission.INTERNET</code> - vlastní provoz účtovací knihovny,</li>
+  <li><code>android.permission.ACCESS_NETWORK_STATE</code> - kontrola připojení.</li>
+</ul>
+<p>Hra sama neotevírá žádné spojení: nemá backend, analytiku ani co stahovat. Pokud nikdy neotevřete dialog příspěvku ani panel s plánem vývoje, účtovací knihovna se vůbec nespustí a žádný požadavek nevznikne.</p>
+<h2>Platby přes Google Play</h2>
+<p>Případný příspěvek zpracovává <strong>Google Play</strong>, ne tato aplikace. Aplikace nikdy nevidí ani neukládá vaše platební údaje. Zpracování ze strany Google se řídí <a href="https://policies.google.com/privacy">zásadami Google</a>.</p>
+<p>Účtovací knihovna Google s sebou přináší služby Google Play a komponenty Google Data Transport. Jakmile je příspěvek otevřený, cokoli knihovna hlásí Googlu o svém vlastním provozu, jde Googlu podle jeho zásad; vývojáři z toho nepřijde nic a hra k tomu nic nepřidává.</p>
+<h2>Zálohování</h2>
+<p>Je zapnuté zálohování Androidu, takže se uvedené hodnoty mohou dostat do **vaší vlastní** zálohy Google účtu a obnovit se na novém zařízení. Tento přenos provádí Android do vašeho účtu podle <a href="https://policies.google.com/privacy">zásad Google</a>, nikoli tato aplikace; vývojář k němu nemá přístup. Vypnout jde v nastavení zálohování Androidu.</p>
+<h2>Smazání dat</h2>
+<p>Odinstalujte aplikaci, nebo použijte **Nastavení -&gt; Aplikace -&gt; Gravity 3D -&gt; Úložiště -&gt; Vymazat data**.</p>
+
+</body>
+</html>
