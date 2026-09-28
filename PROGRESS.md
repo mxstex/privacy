@@ -2,7 +2,7 @@
 
 Status: LIVE
 Live: https://mxstex.github.io/privacy/gravity/ and https://mxstex.github.io/privacy/gravity3d/
-Tests: 2026-09-27 - `python build.py --check`: both pages match their sources (exit 0)
+Tests: 2026-09-28 – `python build.py --check`: both pages match their sources (exit 0)
 Details: README.md
 
 ## Completed
