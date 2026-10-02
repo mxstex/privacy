@@ -2,7 +2,7 @@
 
 Status: LIVE
 Live: https://mxstex.github.io/privacy/gravity/ and https://mxstex.github.io/privacy/gravity3d/
-Tests: 2026-09-28 – `python build.py --check`: both pages match their sources (exit 0)
+Tests: 2026-10-02 – `python build.py --check`: both pages match their sources (exit 0)
 Details: README.md
 
 ## Completed
@@ -10,6 +10,9 @@ Details: README.md
 - Both Android policies rendered from the apps' `docs/privacy-policy.md` (88f9dff).
 - GitHub Pages enabled on `main` / root; both URLs returned HTTP 200 and matched the
   committed HTML on 2026-09-27.
+- 2026-10-02: both URLs still return HTTP 200.
+- The 2D app (`gravityAndroid`) was archived on 2026-09-28; its page stays published (the app is still
+  in a Google Play closed test; taking the page down is an owner decision).
 
 ## Next
 
